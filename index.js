@@ -6,7 +6,7 @@ import {body, validationResult, check, param, query} from "express-validator";
 
 
 
-const p = mongoose.connect("mongodb://localhost:27017", {dbName: "portfolio"});
+const p = mongoose.connect("mongodb+srv://manishbug21cs:chy7gHjIT59Q8pTu@portfolio.umxcqhn.mongodb.net/", {dbName: "portfolio"});
 p.then((data)=>{
     console.log(data.connection.host);
     console.log("connected");
