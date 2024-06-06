@@ -2,6 +2,7 @@ import express from "express";
 import mongoose, {Schema, model} from "mongoose";
 import { ErrorHandler, TryCatch , ErrorMiddleware} from "./ErrorHandler.js";
 import {body, validationResult, check, param, query} from "express-validator";
+import cors from 'cors';
 
 
 
